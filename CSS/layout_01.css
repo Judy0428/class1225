@@ -1,0 +1,22 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 100px;
+    background: #dedede;
+}
+
+.wrap {
+    height: 100vh;
+    background: red;
+}
+
+.footer {
+    height: 100px;
+    background: #dedede;
+}
