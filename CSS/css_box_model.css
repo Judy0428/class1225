@@ -34,3 +34,16 @@
     margin-top: 20px;
     border-radius: 5px;
 }
+
+
+.block {
+    background: #000;
+    margin: 20px auto;
+}
+
+.circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    background: yellow;
+}
