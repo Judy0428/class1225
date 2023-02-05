@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.hover-demo {
+  width: 80%;
+  height: 100px;
+  background: red;
+  color: yellow;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 600;
+}
+.hover-demo:hover {
+  background: blue;
+  color: #fff;
+}
+
+.student {
+  width: 80%;
+  margin: 10px auto;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+.student td,
+.student th {
+  border: 1px solid #000;
+  padding: 10px;
+}
+.student tbody tr:nth-child(even) td {
+  background: #dedede;
+}
+.student tbody tr:last-child td {
+  background: yellow;
+}/*# sourceMappingURL=css_pseudo.css.map */
