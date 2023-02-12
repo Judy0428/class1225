@@ -7,6 +7,17 @@
   font-size: 16px;
 }
 
+.container {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .accrodion {
   margin: 20px auto;
 }
