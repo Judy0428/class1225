@@ -17,3 +17,124 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
+.slogan {
+    font-size: 24px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: calc(50% - 140px);
+        width: 0;
+        height: 3px;
+        border-left: solid 100px #1072c2;
+        border-right: solid 180px #fff;
+    }
+}
+
+.form-control {
+    width: 100%;
+    height: 50px;
+    border: 0;
+    outline: 0;
+    padding: 0 15px;
+    border-radius: 8px;
+    font-size: 18px;
+
+    &:focus {
+        background: #1c54bd;
+        color: #fff;
+
+        &::placeholder {
+            color: rgb(204, 204, 204);
+        }
+    }
+}
+
+.button {
+    padding: 8px 20px;
+    border: 0;
+    border-radius: 8px;
+    font-weight: 800;
+    cursor: pointer;
+
+    &.primary {
+        background: #8110c2;
+        color: #fff;
+
+        &:hover {
+            background-color: #6e09a8;
+        }
+    }
+
+    &.danger {
+        background: rgb(218, 49, 27);
+        color: #fff;
+
+        &:hover {
+            background-color: rgb(172, 33, 15);
+        }
+    }
+}
+
+.text-right {
+    text-align: right;
+}
+
+.form-control-item {
+    margin-bottom: 15px;
+
+    &.form-control-mixed {
+        position: relative;
+
+        .form-control {
+            width: calc(100% - 1px);
+        }
+
+        &.after {
+            .form-control {
+                padding-right: 80px;
+            }
+
+            .form-control-append {
+                right: 0;
+
+                .button {
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                }
+            }
+        }
+
+        &.before {
+            .form-control {
+                padding-left: 80px;
+                margin-left: 1px;
+            }
+
+            .form-control-append {
+                left: 0;
+
+                .button {
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0;
+                }
+            }
+        }
+    }
+
+    .form-control-append {
+        position: absolute;
+        top: 0;
+        height: 100%;
+
+        .button {
+            height: 100%;
+            display: inline-block;
+        }
+    }
+}
