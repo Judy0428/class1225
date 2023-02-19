@@ -1,0 +1,23 @@
+@import 'reset';
+
+
+.wrap {
+    margin-top: 20px;
+}
+
+.rotate {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transform: rotate(45deg);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .rotate-text {
+        font-size: 40px;
+        font-weight: 800;
+        transform: rotate(135deg);
+    }
+}
