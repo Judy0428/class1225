@@ -1,0 +1,23 @@
+@import 'reset';
+
+.block {
+    width: 200px;
+    height: 200px;
+    background: #cc5252;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    position: relative;
+    left: 0;
+
+    &:hover {
+        background: #3b7ebd;
+        font-size: 30px;
+        left: 50%;
+    }
+}

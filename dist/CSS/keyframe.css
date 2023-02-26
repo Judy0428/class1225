@@ -121,64 +121,27 @@ a {
   display: inline-block;
 }
 
-.product-block {
-  margin-top: 20px;
+.block {
+  width: 200px;
+  height: 200px;
+  background-color: #000;
+  color: #fff;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.block.active {
+  animation-name: move;
+  animation-duration: 3s;
+  transform: translate(80%);
 }
 
-.product {
-  width: 300px;
-  min-height: 200px;
-  background: rgb(201, 196, 196);
-  padding: 15px;
-  margin: 0 15px;
-  margin-bottom: 15px;
-}
-.product .product-image {
-  width: 100%;
-  height: 200px;
-  background: red;
-  color: #fff;
-  margin-bottom: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-}
-.product .product-image-wrap {
-  background-position: center;
-  background-image: url(../images/dog2.jpg);
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  transition: 3s;
-}
-.product .discount-bar {
-  background: #c44747;
-  width: 100%;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  font-weight: 700;
-  font-family: "Shantell Sans", cursive;
-  transform: rotate(45deg);
-  position: absolute;
-  right: -110px;
-  top: 10px;
-}
-.product:hover .product-image-wrap {
-  transform: scale(1.5);
-}
-.product:hover .discount-bar {
-  background-color: #fff;
-  color: #c44747;
-}
-.product .product-title {
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 15px;
-}/*# sourceMappingURL=product_discount.css.map */
+@keyframes move {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(80%);
+  }
+}/*# sourceMappingURL=keyframe.css.map */

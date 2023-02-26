@@ -1,0 +1,103 @@
+@import 'reset';
+
+body {
+    background-color: rgb(36, 111, 209);
+    overflow: hidden;
+}
+
+.cloud {
+    width: 400px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 10000px;
+    transform: translateX(10%) translateY(16vh);
+    position: relative;
+    animation-name: move;
+    animation-duration: 2s;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+        background: #fff;
+        left: 81px;
+        top: -50px;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border-radius: 200px;
+        background: #fff;
+        left: 145px;
+        top: -92px;
+    }
+
+    &.s1 {
+        transform: translate(10%, 15vh);
+        animation-name: move-1;
+        animation-duration: 2s;
+    }
+
+    &.s2 {
+        transform: translate(100%, 15vh) scale(0.8);
+        animation-duration: 7s;
+    }
+
+    &.s3 {
+        transform: translate(150%, 15vh) scale(0.2);
+        animation-name: move-3;
+        animation-duration: 4s;
+    }
+
+    &.s4 {
+        transform: translate(50%, 35vh) scale(0.6);
+        animation-name: move-4;
+        animation-duration: 5s;
+    }
+
+}
+
+@keyframes move-1 {
+    from {
+        transform: translate(10%, 15vh);
+    }
+
+    to {
+        transform: translate(100%, 15vh);
+    }
+}
+
+@keyframes move-2 {
+    from {
+        transform: translate(100%, 25vh) scale(0.8);
+    }
+
+    to {
+        transform: translate(100%, 25vh) scale(0.8);
+    }
+}
+
+@keyframes move-3 {
+    from {
+        transform: translate(10%, 15vh);
+    }
+
+    to {
+        transform: translate(100%, 15vh);
+    }
+}
+
+@keyframes move-4 {
+    from {
+        transform: translate(10%, 15vh);
+    }
+
+    to {
+        transform: translate(100%, 15vh);
+    }
+}
