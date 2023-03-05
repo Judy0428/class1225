@@ -1,0 +1,21 @@
+@import 'reset';
+
+.block {
+    background: yellow;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media screen and (max-width:600px) {
+    .block {
+        background: red;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .block {
+        background: blue;
+        color: #fff;
+    }
+}

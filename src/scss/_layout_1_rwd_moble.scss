@@ -1,0 +1,123 @@
+.mobile-icon {
+    position: relative;
+    display: flex;
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+
+    >span {
+        //display: inline-block;
+        width: 30px;
+        height: 5px;
+        background: #000;
+        margin-bottom: 5px;
+        transition-property: background-color transform;
+        transition-duration: 0.5s;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &:hover {
+        >span {
+            background: red;
+        }
+    }
+}
+
+#mobile-menu-switch {
+    display: none;
+
+    &:checked {
+        ~.mobile-icon {
+            >span {
+                background-color: red;
+                position: absolute;
+
+                &:first-child {
+                    top: -5px;
+                    transform: rotate(45deg);
+                }
+
+                &:nth-child(2) {
+                    display: none;
+                }
+
+                &:last-child {
+                    top: -5px;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .mobile-icon {
+        display: flex;
+    }
+
+    .header {
+
+        .menu {
+            display: none;
+        }
+    }
+
+    #mobile-menu-switch {
+        &:checked {
+            ~.menu {
+                display: block;
+
+                li {
+                    margin-left: 0;
+                    margin-bottom: 15px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+
+                &.extend ul {
+                    position: absolute;
+                    top: 75px;
+                    background: #fff;
+                    width: 80%;
+                    left: 10%;
+                    border-radius: 10px;
+                    border-top-right-radius: 0;
+                    border-top-left-radius: 0;
+
+                    padding-top: 15px;
+                    flex-direction: column;
+
+                }
+
+            }
+        }
+    }
+
+    .join-form .join-form-content .content-warp {
+        flex-direction: column;
+
+        >div:first-child::before {
+            border-right: 0;
+            border-bottom: 3px dashed #fff;
+            right: unset;
+            top: unset;
+            left: 20px;
+            bottom: 0;
+            width: calc(100% - 40px);
+        }
+
+        .left-side {
+            width: 100%;
+        }
+
+        .right-side {
+            width: 100%;
+        }
+    }
+}
