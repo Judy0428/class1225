@@ -335,7 +335,7 @@ body {
   transform: rotate(-45deg);
 }
 
-@media screen and (max-width: 610px) {
+@media screen and (max-width: 746px) {
   .mobile-icon {
     display: flex;
   }
@@ -381,5 +381,22 @@ body {
   }
   .join-form .join-form-content .content-warp .right-side {
     width: 100%;
+  }
+  .flow::after {
+    left: 30px;
+  }
+  .flow .flow-item {
+    justify-content: flex-start;
+    padding-left: 13px;
+  }
+  .flow .flow-item:nth-child(even) .flow-text {
+    right: unset;
+    left: 0;
+    margin-right: 0;
+    margin-left: 72px;
+    text-align: left;
+  }
+  .flow .flow-text {
+    left: 0;
   }
 }/*# sourceMappingURL=layout_1_rwd.css.map */
