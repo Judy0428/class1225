@@ -1,0 +1,20 @@
+@import 'reset';
+
+.clock {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+
+    >div {
+        flex: 1;
+        background: #000;
+        color: #fff;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #fff;
+        font-size: 30px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+}
