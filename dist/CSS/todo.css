@@ -119,4 +119,40 @@ a {
 .form-control-item .form-control-append .button {
   height: 100%;
   display: inline-block;
+}
+
+.input-group {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.input-group > :first-child {
+  margin-right: 20px;
+}
+.input-group > :last-child {
+  margin-left: 20px;
+}
+
+#item {
+  list-style-type: none;
+}
+#item li {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+  padding: 0 5px;
+}
+#item li > :first-child {
+  margin-right: 10px;
+}
+#item li:hover {
+  background: #1a6bc7;
+  color: #fff;
+}
+#item li.delete > :last-child {
+  color: red;
+  text-decoration: line-through;
 }/*# sourceMappingURL=todo.css.map */

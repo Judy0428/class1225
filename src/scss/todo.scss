@@ -1,1 +1,45 @@
 @import 'reset';
+
+.input-group {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+
+    >:first-child {
+        margin-right: 20px;
+    }
+
+    >:last-child {
+        margin-left: 20px;
+    }
+}
+
+#item {
+    list-style-type: none;
+
+    li {
+        display: flex;
+        height: 50px;
+        align-items: center;
+        cursor: pointer;
+        transition: 0.2s;
+        padding: 0 5px;
+
+        >:first-child {
+            margin-right: 10px;
+        }
+
+        &:hover {
+            background: #1a6bc7;
+            color: #fff;
+        }
+
+        &.delete {
+            >:last-child {
+                color: red;
+                text-decoration: line-through;
+            }
+        }
+    }
+}
