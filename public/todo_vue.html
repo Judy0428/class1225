@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue</title>
+    <link rel="stylesheet" href="css/todo.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.10.0/firebase.js"
+        integrity="sha512-7NBxPO/qRUrKc+Wi9GbYz0YEzMpi2UMP3mtLcswnvzI0vUFP5Jb7HNVd1V8NmEhXpSe3ZLsoGEhwRHpAZDpYPQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div class="container">
+            <div class="input-group">
+                <label for="">Item</label>
+                <input type="text" ref="itemName" @keyup.enter="addItem">
+                <button @click="addItem">ADD</button>
+                <!-- <button @click="doSaveCloud">雲端儲存</button>
+                <button @click="doLoadCloud">雲端載入</button> -->
+            </div>
+            <hr>
+            <div>
+                <ul id="item">
+                    <li v-for="(item, itemIndex) in items" @click="changeStatus(itemIndex)"
+                        :class="{delete: item.status == 'done'}">
+                        <input type="checkbox" :checked="item.status == 'done'">
+                        <div>{{ item.value }}</div>
+                        <button @click="removeItem(itemIndex)">刪除</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="js/firebase.js"></script>
+<script src="js/todo_vue.js"></script>
+
+</html>

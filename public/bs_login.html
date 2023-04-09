@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        #login-form .alert {
+            display: none;
+        }
+
+        #login-form input[type=checkbox] {
+            display: none;
+        }
+
+        #success-switch:checked~.alert-success {
+            display: block;
+        }
+
+        #fail-switch:checked~.alert-danger {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-form">
+            <h1>System Login</h1>
+            <input type="checkbox" id="success-switch">
+            <input type="checkbox" id="fail-switch">
+            <div class="alert alert-success">Login Success!</div>
+            <div class="alert alert-danger">Login Fail!</div>
+            <div class="mb-2">
+                <label for="account" class="form-label">Account</label>
+                <input type="text" class="form-control" id="account" name="account" placeholder="account">
+            </div>
+            <div class="mb-2">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="password">
+            </div>
+            <div class="text-end">
+                <label for="success-switch" class="btn btn-primary">Login Success</label>
+                <label for="fail-switch" class="btn btn-danger">Login Fail</label>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

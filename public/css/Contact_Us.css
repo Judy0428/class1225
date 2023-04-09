@@ -1,0 +1,123 @@
+*,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.button {
+  padding: 12px 26px;
+  border: 0;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.button.primary {
+  background: #D06666;
+  color: #fff;
+}
+.button.primary:hover {
+  background-color: #c84c4c;
+}
+
+.form-control {
+  width: 100%;
+  height: 40px;
+  border: 0;
+  outline: 0;
+  padding: 0 15px;
+  border-radius: 8px;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.form-control-item {
+  margin-bottom: 15px;
+}
+
+.text-right {
+  text-align: right;
+}
+
+body {
+  background: rgb(255, 255, 255);
+}
+
+.header {
+  background: rgba(255, 255, 255, 0.9647058824);
+}
+.header .header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.header img {
+  height: auto;
+  max-width: 50%;
+  vertical-align: middle;
+}
+.header .menu {
+  list-style-type: none;
+  display: flex;
+  font-weight: 550;
+}
+.header .menu li {
+  margin: 20px;
+  font-size: 18px;
+}
+.header .menu li:hover {
+  color: #1036d0;
+}
+
+.join-form {
+  background-image: url(/images/samantha-sophia-WNQUJY7Fepw-unsplash.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.join-form .join-form-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.join-form .join-form-content .content-warp {
+  background: #fff4e8;
+  width: 80%;
+  display: flex;
+  align-content: center;
+}
+.join-form .join-form-content .content-warp > div {
+  width: 50%;
+  padding: 20px;
+  position: relative;
+}
+.join-form .join-form-content .content-warp .slogan {
+  font-size: 24px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+.join-form .join-form-content .content-warp .join-form-text {
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+}/*# sourceMappingURL=Contact_Us.css.map */
